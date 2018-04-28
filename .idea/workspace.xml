@@ -1,0 +1,1820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserMapper.xml" line="101" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0998d8e-e240-46e4-a990-109193f80ccf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_caches_mybatis_ehcache_1_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simple.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/enums/Enabled.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/CountryMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysPrivilegeMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysRoleMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysUserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysUserRoleMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/Country.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysPrivilege.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysRole.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysRolePrivilege.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUserRole.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUserWithBLOBs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/CountryMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysPrivilegeMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysRoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserRoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/CacheMapperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/MapperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/SysPrivilegeMapperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/SysRoleMapperTest.java" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/kotlinc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__org_mybatis_caches_mybatis_ehcache_1_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/simple.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/enums/Enabled.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/mapper/CountryMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/mapper/SysPrivilegeMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/mapper/SysRoleMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/mapper/SysUserMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/mapper/SysUserRoleMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/model/Country.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/model/SysPrivilege.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/model/SysRole.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/model/SysRolePrivilege.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/model/SysUser.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/model/SysUserRole.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/java/dyc/mybatis/simple/model/SysUserWithBLOBs.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/dyc/mybatis/simple/mapper/CountryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/dyc/mybatis/simple/mapper/SysPrivilegeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/dyc/mybatis/simple/mapper/SysRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/dyc/mybatis/simple/mapper/SysUserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/dyc/mybatis/simple/mapper/SysUserRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/ehcache.xsd" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/main/resources/mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/test/java/dyc/mybatis/simple/mapper/CacheMapperTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/test/java/dyc/mybatis/simple/mapper/MapperTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/test/java/dyc/mybatis/simple/mapper/SysPrivilegeMapperTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/src/test/java/dyc/mybatis/simple/mapper/SysRoleMapperTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/enums/Enabled.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/CountryMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/CountryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysPrivilegeMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysPrivilegeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysRoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysUserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysUserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysUserRoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/mapper/SysUserRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/model/Country.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/model/SysPrivilege.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/model/SysRole.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/model/SysRolePrivilege.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/model/SysUser.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/model/SysUserRole.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/dyc/mybatis/simple/model/SysUserWithBLOBs.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/ehcache.xsd" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/classes/mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/test-classes/dyc/mybatis/simple/mapper/CacheMapperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/test-classes/dyc/mybatis/simple/mapper/MapperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/test-classes/dyc/mybatis/simple/mapper/SysPrivilegeMapperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:/Git/data/mybatis-pro/simple/target/test-classes/dyc/mybatis/simple/mapper/SysRoleMapperTest.class" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CacheMapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/CacheMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="122" column="24" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-228">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1524907171897" expanded="true" signature="59:110268" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107583:107625" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107583:107643" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107583:107656" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107583:107671" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107706:110257" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107719:110242" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107773:108068" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107792:108053" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107855:108033" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107895:107999" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="107916:107977" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108118:108445" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108137:108430" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108232:108410" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108272:108376" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108293:108354" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108496:108761" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108515:108746" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108548:108726" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108588:108692" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108609:108670" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108804:109110" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108823:109095" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108897:109075" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108937:109041" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="108958:109019" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109161:109509" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109180:109494" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109257:109474" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109297:109440" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109318:109418" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109544:109850" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109563:109835" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109637:109815" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109677:109781" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109698:109759" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109902:110228" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="109921:110213" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="110015:110193" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="110055:110159" ph="..." />
+                <marker date="1524907171897" expanded="true" signature="110076:110137" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1524900020935" expanded="true" signature="59:251" ph="..." />
+                <marker date="1524900020935" expanded="true" signature="101:240" ph="..." />
+                <marker date="1524900020935" expanded="true" signature="115:225" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiDesigner.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compiler.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kotlinc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/kotlinc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/MapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.</find>
+      <find>insert</find>
+      <find>insertSelective</find>
+      <find>findByUser</find>
+      <find>insert3</find>
+      <find>roleMap</find>
+      <find>userRoleMap</find>
+      <find>userRoleMapSelect</find>
+      <find>ResultMapWithBLOBs</find>
+      <find>findAllUserAndRoles</find>
+      <find>sysPrivilegeList</find>
+      <find>rolePrivilegeListMap</find>
+      <find>userRolePrivilegeListMap</find>
+      <find>findAllUserAndRoles2</find>
+      <find>BaseResultMap</find>
+      <find>”</find>
+      <find>rolePrivilegeByRoleIdListMap</find>
+      <find>”</find>
+      <find>simple</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/Country.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CountryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/CountryMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/CountryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUserWithBLOBs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUserRole.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/CountryMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUser.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysPrivilegeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysPrivilegeMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/SysPrivilegeMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/enums/Enabled.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/SysRoleMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/MapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysRoleMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysRole.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/CacheMapperTest.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/soft/apache-maven-3.5.0" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="simple" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="simple" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="886" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SerialVersionUIDNotStaticFinal</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="last_opened_file_path" value="D:/Git/data" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dyc.mybatis.simple.mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Intellij_2018\simple\src\main\java\dyc\mybatis\simple\mapper" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dyc.mybatis.simple.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Intellij_2018\simple\src\main\resources" />
+      <recent name="F:\Intellij_2018\simple\src\main\resources\dyc\mybatis\simple\mapper" />
+      <recent name="F:\Intellij_2018\simple\src\main\resources\mapper" />
+      <recent name="F:\Intellij_2018\simple\src\main\java\dyc\mybatis\simple\model" />
+      <recent name="F:\Intellij_2018\simple\src\main\java\dyc\mybatis\simple\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CacheMapperTest.tesEhCache1">
+    <configuration default="false" name="SysRoleMapperTest.selectByPrimaryKeyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dyc.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dyc.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="dyc.mybatis.simple.mapper.SysRoleMapperTest" />
+      <option name="METHOD_NAME" value="selectByPrimaryKeyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MapperTest.testCache1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dyc.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dyc.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="dyc.mybatis.simple.mapper.MapperTest" />
+      <option name="METHOD_NAME" value="testCache1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CacheMapperTest.testCache1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dyc.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dyc.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="dyc.mybatis.simple.mapper.CacheMapperTest" />
+      <option name="METHOD_NAME" value="testCache1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CacheMapperTest.testL2Cache1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dyc.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dyc.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="dyc.mybatis.simple.mapper.CacheMapperTest" />
+      <option name="METHOD_NAME" value="testL2Cache1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CacheMapperTest.tesEhCache1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dyc.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dyc.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="dyc.mybatis.simple.mapper.CacheMapperTest" />
+      <option name="METHOD_NAME" value="tesEhCache1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="simple" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SysRoleMapperTest.selectByPrimaryKeyTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MapperTest.testCache1" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CacheMapperTest.testCache1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CacheMapperTest.testL2Cache1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CacheMapperTest.tesEhCache1" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CacheMapperTest.tesEhCache1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CacheMapperTest.testL2Cache1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CacheMapperTest.testCache1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MapperTest.testCache1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SysRoleMapperTest.selectByPrimaryKeyTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0998d8e-e240-46e4-a990-109193f80ccf" name="Default" comment="" />
+      <created>1524639380223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524639380223</updated>
+      <workItem from="1524639383345" duration="11011000" />
+      <workItem from="1524703341422" duration="1170000" />
+      <workItem from="1524704542377" duration="15755000" />
+      <workItem from="1524790213915" duration="25255000" />
+      <workItem from="1524876282319" duration="14451000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CacheMapperTest_tesEhCache1 - 2018.04.28 at 11h 19m 15s.xml">
+      <configuration name="CacheMapperTest.tesEhCache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_tesEhCache1 - 2018.04.28 at 11h 19m 33s.xml">
+      <configuration name="CacheMapperTest.tesEhCache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 04m 01s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 04m 16s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 07m 28s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 11m 30s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 12m 59s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 14m 15s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 16m 51s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CacheMapperTest_testL2Cache1 - 2018.04.28 at 11h 18m 57s.xml">
+      <configuration name="CacheMapperTest.testL2Cache1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="67642000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57104915" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19023137" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41965473" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26285347" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2877984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="13" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this.sysPrivilegeList" custom="dyc.mybatis.simple.model.SysRole" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524647244500" expanded="true" signature="545:670" ph="insert into sys_role_privilege... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <marker date="1524818626426" expanded="true" signature="2860:2913" ph="SELECT u.* F... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="3004:3767" ph="SELECT u.id sys_user" />
+            <marker date="1524818626426" expanded="true" signature="4012:4469" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="4555:5035" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5126:5380" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5454:5493" ph="select * fro... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5565:5935" ph="SELECT r.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5565:5936" ph="SELECT r.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="6023:6395" ph="SELECT r.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="6473:7378" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="7461:7862" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="7941:8101" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="7941:8112" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="8318:8852" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="8931:9411" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="9498:9763" ph="INSERT INTO sys_user... " />
+            <marker date="1524818626426" expanded="true" signature="10319:10572" ph="INSERT INTO sys_user... " />
+            <marker date="1524818626426" expanded="true" signature="10661:10684" ph="SELECT LAST_... " />
+            <marker date="1524818626426" expanded="true" signature="10815:10965" ph="select , fro... " />
+            <marker date="1524818626426" expanded="true" signature="11048:11105" ph="delete from " />
+            <marker date="1524818626426" expanded="true" signature="11203:11561" ph="insert into sys_user... " />
+            <marker date="1524818626426" expanded="true" signature="13017:13702" ph="update sys_u... " />
+            <marker date="1524818626426" expanded="true" signature="13821:14186" ph="update sys_u... " />
+            <marker date="1524818626426" expanded="true" signature="14287:14548" ph="update sys_u... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524647244502" expanded="true" signature="520:630" ph="insert into sys_user_role... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/CountryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <marker date="1524648392713" expanded="true" signature="259:307" ph="SELECT id, c... country" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/MapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="64" lean-forward="true" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUserWithBLOBs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/Country.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysPrivilegeMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/CountryMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/CountryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <marker date="1524648392713" expanded="true" signature="259:307" ph="SELECT id, c... country" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysUserRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/CountryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUserWithBLOBs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysRolePrivilege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysPrivilege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysRolePrivilegeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+          <folding>
+            <marker date="1524647244500" expanded="true" signature="545:670" ph="insert into sys_role_privilege... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/SysPrivilegeMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysPrivilegeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <marker date="1524647244502" expanded="true" signature="520:630" ph="insert into sys_user_role... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/type/EnumOrdinalTypeHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/SysRoleMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/enums/Enabled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/session/SqlSessionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/mapper/SysRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dyc/mybatis/simple/model/SysRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysPrivilegeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1524815572563" expanded="true" signature="673:802" ph="SELECT p.* F... sys_privilege" />
+            <marker date="1524815572563" expanded="true" signature="912:1020" ph="select from sys_privilege" />
+            <marker date="1524815572563" expanded="true" signature="1103:1165" ph="delete from " />
+            <marker date="1524815572563" expanded="true" signature="1259:1438" ph="insert into sys_privilege... " />
+            <marker date="1524815572563" expanded="true" signature="2281:2580" ph="update sys_p... " />
+            <marker date="1524815572563" expanded="true" signature="2686:2858" ph="update sys_p... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <marker date="1524818626426" expanded="true" signature="2860:2913" ph="SELECT u.* F... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="3004:3767" ph="SELECT u.id sys_user" />
+            <marker date="1524818626426" expanded="true" signature="4012:4469" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="4555:5035" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5126:5380" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5454:5493" ph="select * fro... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5565:5935" ph="SELECT r.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="5565:5936" ph="SELECT r.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="6023:6395" ph="SELECT r.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="6473:7378" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="7461:7862" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="7941:8101" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="7941:8112" ph="SELECT user_... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="8318:8852" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="8931:9411" ph="select u.id,... sys_user" />
+            <marker date="1524818626426" expanded="true" signature="9498:9763" ph="INSERT INTO sys_user... " />
+            <marker date="1524818626426" expanded="true" signature="10319:10572" ph="INSERT INTO sys_user... " />
+            <marker date="1524818626426" expanded="true" signature="10661:10684" ph="SELECT LAST_... " />
+            <marker date="1524818626426" expanded="true" signature="10815:10965" ph="select , fro... " />
+            <marker date="1524818626426" expanded="true" signature="11048:11105" ph="delete from " />
+            <marker date="1524818626426" expanded="true" signature="11203:11561" ph="insert into sys_user... " />
+            <marker date="1524818626426" expanded="true" signature="13017:13702" ph="update sys_u... " />
+            <marker date="1524818626426" expanded="true" signature="13821:14186" ph="update sys_u... " />
+            <marker date="1524818626426" expanded="true" signature="14287:14548" ph="update sys_u... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dyc/mybatis/simple/mapper/SysRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="36" column="56" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="56" />
+          <folding>
+            <marker date="1524884653812" expanded="true" signature="2842:2998" ph="SELECT r.* F... sys_role" />
+            <marker date="1524884653812" expanded="true" signature="3079:3116" ph="SELECT * FRO... sys_role" />
+            <marker date="1524884653812" expanded="true" signature="3213:3669" ph="select r.id sys_role" />
+            <marker date="1524884653812" expanded="true" signature="3789:3902" ph="select from sys_role" />
+            <marker date="1524884653812" expanded="true" signature="3989:4046" ph="delete from " />
+            <marker date="1524884653812" expanded="true" signature="4137:4377" ph="insert into sys_role... " />
+            <marker date="1524884653812" expanded="true" signature="5705:6261" ph="update sys_r... " />
+            <marker date="1524884653812" expanded="true" signature="6366:6613" ph="update sys_r... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/MapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dyc/mybatis/simple/mapper/CacheMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="122" column="24" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/kotlinc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524900020935" expanded="true" signature="59:251" ph="..." />
+            <marker date="1524900020935" expanded="true" signature="101:240" ph="..." />
+            <marker date="1524900020935" expanded="true" signature="115:225" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524907171897" expanded="true" signature="59:110268" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107583:107625" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107583:107643" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107583:107656" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107583:107671" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107706:110257" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107719:110242" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107773:108068" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107792:108053" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107855:108033" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107895:107999" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="107916:107977" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108118:108445" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108137:108430" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108232:108410" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108272:108376" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108293:108354" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108496:108761" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108515:108746" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108548:108726" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108588:108692" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108609:108670" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108804:109110" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108823:109095" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108897:109075" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108937:109041" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="108958:109019" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109161:109509" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109180:109494" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109257:109474" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109297:109440" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109318:109418" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109544:109850" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109563:109835" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109637:109815" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109677:109781" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109698:109759" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109902:110228" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="109921:110213" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="110015:110193" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="110055:110159" ph="..." />
+            <marker date="1524907171897" expanded="true" signature="110076:110137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>simple</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

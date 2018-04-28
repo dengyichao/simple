@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- mapping 文件路径配置 -->
+	<settings>
+		<setting name= "logImpl" value="LOG4J" />
+		<!-- 当该参数设置为true 时，对任意延迟属性的调用会使带有延迟加载属性的对象完整加载，
+			反之，每种属性都将按需加载。  改成false懒加载才能正常执行  -->
+		<setting name="aggressiveLazyLoading" value="false" />
+		<!-- 二级缓存总开关，默认就是true可以不设置 -->
+		<setting name ="cacheEnabled" value = "true" />
+		<!--<setting name="useGeneratedKeys" value="true" />
+		<setting name="useColumnLabel" value="true" />
+		<setting name="mapUnderscoreToCamelCase" value="true" />-->
+	</settings>
+
+	<typeAliases>
+		<package name="dyc.mybatis.simple.model" />
+	</typeAliases>
+	<typeHandlers>
+		<typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="dyc.mybatis.simple.enums.Enabled"/>
+	</typeHandlers>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC">
+				<property name="" value="" />
+			</transactionManager>
+			<dataSource type="UNPOOLED">
+				<property name="driver" value ="com.mysql.jdbc.Driver" />
+				<property name= "url" value = "jdbc:mysql://localhost:3306/mybatis" />
+				<property name="username" value ="root" />
+				<property name="password" value ="admin" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<databaseIdProvider type="DB_VENDOR">
+		<property name= "SQL Server" value= "sqlserver" />
+		<property name ="DB2" value="db2" />
+		<property name= "Oracle" value ="oracle" />
+		<property name="MySQL " value="rnysql "/>
+		<property name="PostgreSQL" value="postgresql" />
+		<property name="Derby" value ="derby" />
+		<property name = "HSQL" value= "hsqldb" />
+		<property name="H2" value="h2" />
+	</databaseIdProvider>
+	<!--<mappers>
+		<mapper resource="mapper/CountryMapper.xml" />
+		<mapper resource="mapper/SysUserMapper.xml" />
+		<mapper resource="mapper/SysRoleMapper.xml" />
+		<mapper resource="mapper/SysPrivilegeMapper.xml" />
+		<mapper resource="mapper/SysUserRoleMapper.xml" />
+		<mapper resource="mapper/SysRolePrivilegeMapper.xml" />
+	</mappers>-->
+	<mappers>
+		<package name="dyc.mybatis.simple.mapper"/>
+	</mappers>
+
+
+</configuration>

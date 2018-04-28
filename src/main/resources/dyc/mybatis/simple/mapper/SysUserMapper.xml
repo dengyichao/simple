@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dyc.mybatis.simple.mapper.SysUserMapper">
+
+  <resultMap id="BaseResultMap" type="dyc.mybatis.simple.model.SysUser">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="dyc.mybatis.simple.model.SysUserWithBLOBs">
+    <result column="user_info" jdbcType="LONGVARCHAR" property="userInfo" />
+    <result column="head_img" jdbcType="LONGVARBINARY" property="headImg" />
+  </resultMap>
+
+  
+  <resultMap id="userRoleMap" extends="ResultMapWithBLOBs" type="SysUserWithBLOBs">
+    <!--<association property="sysRole" columnPrefix="role_" javaType="SysRole">
+      <result property="id" column="id" />
+      <result property="roleName" column="role_name" />
+      <result property="enabled" column = "enabled" />
+      <result property="createBy" column="create_by" />
+      <result property="createTime" column="create_time" jdbcType="TIMESTAMP" />
+    </association>-->
+    <!-- 高级用法，可维护性极高 -->
+    <association property="sysRole" columnPrefix="role_"  resultMap="dyc.mybatis.simple.mapper.SysRoleMapper.BaseResultMap"></association>
+  </resultMap>
+  <resultMap id="userRoleMapSelect" extends="BaseResultMap" type="SysUserWithBLOBs">
+      <!--
+              若需要懒加载执行，必须在mybatis-config.xml  对参数 aggressiveLazyLoading 进行设置
+              fetchType : 数据加载方式
+                       lazy   懒加载，可以解决n+1等效率问题
+       -->
+      <association property="sysRole" fetchType="lazy" column="{id=role_id}" select="dyc.mybatis.simple.mapper.SysRoleMapper.findRoleById" />
+  </resultMap>
+  
+  <resultMap id="userRoleListMap" extends="ResultMapWithBLOBs" type="SysUserWithBLOBs">
+      <collection property="roleList" fetchType="lazy" columnPrefix="role_" resultMap="dyc.mybatis.simple.mapper.SysRoleMapper.BaseResultMap" />
+  </resultMap>
+
+  <resultMap id="userRolePrivilegeListMap" extends="ResultMapWithBLOBs" type="SysUserWithBLOBs">
+    <collection property="roleList" columnPrefix="role_" resultMap="dyc.mybatis.simple.mapper.SysRoleMapper.rolePrivilegeListMap" />
+  </resultMap>
+  <resultMap id="findRoleAndUserByUserIdMap" extends="ResultMapWithBLOBs" type="SysUserWithBLOBs">
+    <collection property="roleList" fetchType="lazy" column="{userId=id}" select="dyc.mybatis.simple.mapper.SysRoleMapper.findRoleByUserId" />
+  </resultMap>
+
+  <select id="findRoleAndUserByUserId" resultMap="findRoleAndUserByUserIdMap">
+    SELECT u.* FROM sys_user u
+    WHERE u.id = #{userId}
+  </select>
+  <select id="findAllUserAndRoles" resultMap="userRolePrivilegeListMap" >
+    SELECT
+        u.id id,
+        u.user_name user_name,
+        u.user_password user_password,
+        u.user_email user_email,
+        u.user_info user_info,
+        u.head_img head_img,
+        u.create_time create_time,
+        r.id role_id,
+        r.role_name role_role_name,
+        r.enabled role_enabled,
+        r.create_by role_create_by,
+        r.create_time role_create_time,
+        p.id role_privilege_id,
+        p.privilege_name role_privilege_privilege_name,
+        p.privilege_url role_privilege_privilege_url
+    FROM sys_user u
+    INNER JOIN sys_user_role ur ON u.id = ur.user_id
+    INNER JOIN sys_role r ON ur.role_id = r.id
+    INNER JOIN sys_role_privilege rp ON r.id = rp.role_id
+    INNER JOIN sys_privilege p ON p.id = rp.privilege_id
+  </select>
+
+  <sql id="Base_Column_List">
+    id, user_name, user_password, user_email, create_time
+  </sql>
+  <sql id="Blob_Column_List">
+    user_info, head_img
+  </sql>
+  <select id="findUserAndRoleListAll" resultMap="userRoleListMap">
+    select
+    u.id,
+    u.user_name user_name,
+    u.user_password user_password ,
+    u.user_email user_email ,
+    u.user_info user_info ,
+    u.head_img head_img,
+    u.create_time create_time,
+    r.id role_id,
+    r.role_name role_role_name,
+    r.enabled role_enabled,
+    r.create_by role_create_by,
+    r.create_time role_create_time
+    from sys_user u
+    inner join sys_user_role ur on u.id = ur.user_id
+    inner join sys_role r on ur.role_id= r.id
+  </select>
+
+  <select id="findUserAndRoleListById" resultMap="userRoleListMap">
+    select
+    u.id,
+    u.user_name user_name,
+    u.user_password user_password ,
+    u.user_email user_email ,
+    u.user_info user_info ,
+    u.head_img head_img,
+    u.create_time create_time,
+    r.id role_id,
+    r.role_name role_role_name,
+    r.enabled role_enabled,
+    r.create_by role_create_by,
+    r.create_time role_create_time
+    from sys_user u
+    inner join sys_user_role ur on u.id = ur.user_id
+    inner join sys_role r on ur.role_id= r.id
+    where u.id = #{id}
+  </select>
+
+
+  <select id="findUserAndRoleByIdSelect" resultMap="userRoleMapSelect">
+    select
+      u.id,
+      u.user_name,
+      u.user_password,
+      u.user_email,
+      u.user_info ,
+      u.head_img ,
+      u.create_time ,
+      ur.role_id
+    from sys_user u
+    inner join sys_user_role ur on u.id = ur.user_id
+    where u.id = #{id}
+  </select>
+
+  <select id="findById" resultMap="ResultMapWithBLOBs">
+    select * from sys_user where id = #{id}
+  </select>
+  <select id="findRolesByUserId" resultType="SysRole">
+    SELECT
+        r.id,
+        r.role_name roleName,
+        r.enabled,
+        r.create_by createBy,
+        r.create_time createTime,
+        u.user_name AS  "sysUser.userName",
+		u.user_email AS  "sysUser.userEmail"
+    FROM
+        sys_user u
+    INNER JOIN sys_user_role ur ON u.id = ur.user_id
+    INNER JOIN sys_role r ON ur.role_id = r.id
+    WHERE u.id = #{userId}
+  </select>
+
+  <select id="findRolesByUserIdAndRoleEnabled" resultType="SysRole">
+    SELECT
+    r.id,
+    r.role_name roleName,
+    r.enabled,
+    r.create_by createBy,
+    r.create_time createTime,
+    u.user_name AS  "sysUser.userName",
+    u.user_email AS  "sysUser.userEmail"
+    FROM
+    sys_user u
+    INNER JOIN sys_user_role ur ON u.id = ur.user_id
+    INNER JOIN sys_role r ON ur.role_id = r.id
+    WHERE u.id = #{userId} AND r.enabled = #{enabled}
+  </select>
+
+  <select id="findByUser" resultMap="ResultMapWithBLOBs">
+      SELECT
+        user_name,
+        user_password,
+        user_email,
+        user_info,
+        head_img,
+        create_time
+    FROM
+        sys_user
+    <where>
+      <if test="userName != null and userName != ''">   <!-- 注意这里的and必须为小写，否则报错  -->
+        <!--
+            由于不同数据库之间的语法差异，如果更换数据库，有些SQL 语句可能就需要重写。
+            针对这种情况，可以使用bind 标签来避免由于更换数据库带来的一些麻烦,使用bind 拼接字符串不仅可
+            以避免因更换数据库而修改S QL ，也能预防SQL 注入
+         -->
+       <!-- <bind name="userNarneLike" value="'%'+userName+'%'" />
+        AND user_name LIKE #{userNarneLike}-->
+        <if test= "_databaseId == 'mysql'">
+            AND user_name LIKE concat('%',#{userName},'%')
+        </if>
+        <if test="_databaseId == 'oracle'">
+            AND user_name LIKE '%'||#{userName}||'%'
+        </if>
+      </if>
+      <if test="userEmail != null and userEmail != ''">
+        AND user_email = #{userEmail}
+      </if>
+    </where>
+  </select>
+
+  <select id="findByIdOrUserName" resultMap="ResultMapWithBLOBs">
+    SELECT
+    user_name,
+    user_password,
+    user_email,
+    user_info,
+    head_img,
+    create_time
+    FROM
+    sys_user
+    WHERE
+    1 = 1
+    <choose>
+      <when test="id != null">
+        AND  id = #{id}
+      </when>
+      <when test="userName != null and userName != ''">
+        AND user_name = #{userName}
+      </when>
+      <otherwise>
+        AND 1 = 2
+      </otherwise>
+    </choose>
+  </select>
+
+  <select id="findByIdList" resultMap="ResultMapWithBLOBs">
+      SELECT
+        user_name,
+        user_password,
+        user_email,
+        user_info,
+        head_img,
+        create_time
+      FROM
+        sys_user
+      WHERE id IN 
+      <foreach collection="list" open="(" close=")" separator="," item="id" index="i">
+          #{id}
+      </foreach>
+  </select>
+
+  <select id="findUserAndRoleById" resultMap="ResultMapWithBLOBs">
+    select
+      u.id,
+      u.user_name user_name,
+      u.user_password user_password ,
+      u.user_email user_email ,
+      u.user_info user_info ,
+      u.head_img head_img,
+      u.create_time create_time,
+      r.id "sysRole.id",
+      r.role_name "sysRole.roleName",
+      r.enabled "sysRole.enabled",
+      r.create_by "sysRole.createBy",
+      r.create_time "sysRole.createTime"
+      from sys_user u
+      inner join sys_user_role ur on u.id = ur.user_id
+      inner join sys_role r on ur.role_id= r.id
+      where u.id = #{id}
+  </select>
+
+  <select id="findUserAndRoleById2" resultMap="userRoleMap">
+    select
+    u.id,
+    u.user_name user_name,
+    u.user_password user_password ,
+    u.user_email user_email ,
+    u.user_info user_info ,
+    u.head_img head_img,
+    u.create_time create_time,
+    r.id role_id,
+    r.role_name role_role_name,
+    r.enabled role_enabled,
+    r.create_by role_create_by,
+    r.create_time role_create_time
+    from sys_user u
+    inner join sys_user_role ur on u.id = ur.user_id
+    inner join sys_role r on ur.role_id= r.id
+    where u.id = #{id}
+  </select>
+
+  <insert id="insertByKey" useGeneratedKeys="true" keyProperty="id">
+    INSERT INTO sys_user (
+        user_name,
+        user_password,
+        user_email,
+        user_info,
+        head_img,
+        create_time
+    )VALUES(#{userName},#{userPassword},#{userEmail},#{userInfo},#{headImg,jdbcType=BLOB},#{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <!--
+      selectKey 标签的ke yColumn 、keyProperty 和上面useGeneratedKeys 的用法含
+      义相同，这里的r esu ltT ype 用于设置返回值类型。o rder 属性的设置和使用的数据库有关。
+      在MySQL 数据库中， order 属性设置的值是AFTER ，因为当前记录的主键值在insert 语句
+      执行成功后才能获取到。而在Oracle 数据库中， order 的值要设置为BEFORE ，这是因为Oracle
+      中需要先从序列获取值，然后将值作为主键插入到数据库中。
+      <insert id="insert3">
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="BEFORE">
+          SELECT SEQ ID.nextval from dual
+        </selectKey>
+         insert into ...
+      </insert>
+  -->
+  <insert id="insert3">
+    INSERT INTO sys_user (
+      user_name,
+      user_password,
+      user_email,
+      user_info,
+      head_img,
+      create_time
+    )VALUES(#{userName},#{userPassword},#{userEmail},#{userInfo},#{headImg,jdbcType=BLOB},#{createTime,jdbcType=TIMESTAMP})
+    <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+        SELECT LAST_INSERT_ID()
+    </selectKey>
+</insert>
+
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from sys_user
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_user
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="dyc.mybatis.simple.model.SysUserWithBLOBs">
+    insert into sys_user (id, user_name, user_password, 
+      user_email, create_time, user_info, 
+      head_img)
+    values (#{id,jdbcType=BIGINT}, #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, 
+      #{userEmail,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{userInfo,jdbcType=LONGVARCHAR}, 
+      #{headImg,jdbcType=LONGVARBINARY})
+  </insert>
+  
+  
+  <insert id="insertSelective" parameterType="dyc.mybatis.simple.model.SysUserWithBLOBs">
+    insert into sys_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="userPassword != null">
+        user_password,
+      </if>
+      <if test="userEmail != null">
+        user_email,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="userInfo != null">
+        user_info,
+      </if>
+      <if test="headImg != null">
+        head_img,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null">
+        #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userEmail != null">
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userInfo != null">
+        #{userInfo,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="headImg != null">
+        #{headImg,jdbcType=LONGVARBINARY},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="dyc.mybatis.simple.model.SysUserWithBLOBs">
+    update sys_user
+    <set>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null">
+        user_password = #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userEmail != null">
+        user_email = #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userInfo != null">
+        user_info = #{userInfo,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="headImg != null">
+        head_img = #{headImg,jdbcType=LONGVARBINARY},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="dyc.mybatis.simple.model.SysUserWithBLOBs">
+    update sys_user
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_password = #{userPassword,jdbcType=VARCHAR},
+      user_email = #{userEmail,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      user_info = #{userInfo,jdbcType=LONGVARCHAR},
+      head_img = #{headImg,jdbcType=LONGVARBINARY}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="dyc.mybatis.simple.model.SysUser">
+    update sys_user
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_password = #{userPassword,jdbcType=VARCHAR},
+      user_email = #{userEmail,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

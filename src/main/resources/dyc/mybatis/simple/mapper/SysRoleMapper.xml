@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dyc.mybatis.simple.mapper.SysRoleMapper">
+    <!--
+        默认的二级缓存会有如下效果。
+            • 映射语句文件中的所有SELECT 语句将会被缓存。
+            • 映射语句文件中的所有时SERT 、UPDATE 、DELETE 语句会刷新缓存。
+            缓存会使用Least Rece ntly U sed ( LRU ，最近最少使用的）算法来收回。
+            • 根据时间表（如no Flush Int erv al ，没有刷新间隔），缓存不会以任何时间顺序来刷新。
+            缓存会存储集合或对象（无论查询方法返回什么类型的值）的102 4 个引用。
+            • 缓存会被视为read/writ e （可读／可写）的， 意味着对象检索不是共享的，而且可以安全
+            地被调用者修改，而不干扰其他调用者或线程所做的潜在修改。
+             <cache />
+    -->
+    <!--
+        eviction （收回策略）
+            > LRU （最近最少使用的） ： 移除最长时间不被使用的对象，这是默认值。
+            > FIFO （先进先出〉： 按对象进入缓存的顺序来移除它们。
+            > SOFT （软引用） ： 移除基于垃圾回收器状态和软引用规则的对象。
+            > WEAK （弱引用） ： 更积极地移除基于垃圾收集器状态和弱引用规则的对象。
+         flushinterval （刷新间隔〉   可以被设置为任意的正整数， 而且它们代表一个合理
+                        的毫秒形式的时间段。默认情况不设置，即没有刷新间隔， 缓存仅仅在调用语句时刷新。
+         size （引用数目）  可以被设置为任意正整数，要记住缓存的对象数目和运行环境的可用内存资源数目。默认值是10 2 4 。
+         readOnly （只读）。属性可以被设置为true 或false 。只读的缓存会给所有调用者返回缓存对象的相同实例，
+                            因此这些对象不能被修改， 这提供了很重要的性能优势。可读写的缓存会通过序列化返回缓存对象的
+                            拷贝， 这种方式会慢一些，但是安全， 因此默认是false 。
+
+               <cache
+            eviction="FIFO"
+            flushInterval="60000"
+            size="512"
+            readOnly="false"
+        />
+    -->
+
+    <!-- 启用缓存框架EhCache -->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+
+    <resultMap id="BaseResultMap" type="dyc.mybatis.simple.model.SysRole">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="role_name" jdbcType="VARCHAR" property="roleName"/>
+        <result column="enabled" jdbcType="INTEGER" property="enabled"/>
+        <result column="create_by" jdbcType="BIGINT" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+    </resultMap>
+    
+    <resultMap id="rolePrivilegeListMap" extends="BaseResultMap" type="SysRole">
+        <collection property="sysPrivilegeList" columnPrefix="privilege_" resultMap="dyc.mybatis.simple.mapper.SysPrivilegeMapper.BaseResultMap" />
+    </resultMap>
+
+    <resultMap id="rolePrivilegeByRoleIdListMap" extends="BaseResultMap" type="SysRole">
+        <!--
+            column 属性配置的｛ roleid＝工d}, roleid 是select 指定方法selectPrivilegeByRole id 查询中的参数， id 是当前查询selectRoleByUserid 中查
+            询出的角色id 。
+        -->
+        <collection property="sysPrivilegeList" fetchType="lazy" column="{roleId=id}" select="dyc.mybatis.simple.mapper.SysPrivilegeMapper.findPrivilegeByRoleId" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    id, role_name, enabled, create_by, create_time
+    </sql>
+
+    <select id="findRoleByUserId" resultMap="rolePrivilegeByRoleIdListMap">
+      SELECT
+           r.*
+      FROM
+          sys_role r
+       INNER JOIN sys_user_role ur ON r.id = ur.role_id
+       WHERE
+           ur.user_id = #{userId}
+    </select>
+    
+    <select id="findRoleById" resultMap="BaseResultMap">
+    SELECT * FROM sys_role WHERE id=#{id}
+  </select>
+    <select id="findAllRoleAndPrivileges" resultMap="rolePrivilegeListMap">
+        select
+            r.id id,
+            r.role_name role_name,
+            r.enabled enabled,
+            r.create_by create_by,
+            r.create_time create_time,
+            p.id privilege_id,
+            p.privilege_name privilege_privilege_name,
+            p.privilege_url privilege_privilege_url
+            from sys_role r
+        inner join sys_role_privilege rp on rp.role_id = r.id
+        inner join sys_privilege p on p.id = rp.privilege_id
+    </select>
+
+
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_role
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_role
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+    <insert id="insert" parameterType="dyc.mybatis.simple.model.SysRole">
+    insert into sys_role (id, role_name, enabled, 
+      create_by, create_time)
+    values (#{id,jdbcType=BIGINT}, #{roleName,jdbcType=VARCHAR}, #{enabled,jdbcType=INTEGER}, 
+      #{createBy,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+    <insert id="insertSelective" parameterType="dyc.mybatis.simple.model.SysRole">
+        insert into sys_role
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="roleName != null">
+                role_name,
+            </if>
+            <if test="enabled != null">
+                enabled,
+            </if>
+            <if test="createBy != null">
+                create_by,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="roleName != null">
+                #{roleName,jdbcType=VARCHAR},
+            </if>
+            <if test="enabled != null">
+                #{enabled,jdbcType=INTEGER},
+            </if>
+            <if test="createBy != null">
+                #{createBy,jdbcType=BIGINT},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="dyc.mybatis.simple.model.SysRole">
+        update sys_role
+        <set>
+            <if test="roleName != null">
+                role_name = #{roleName,jdbcType=VARCHAR},
+            </if>
+            <if test="enabled != null">
+                enabled = #{enabled,jdbcType=INTEGER},
+            </if>
+            <if test="createBy != null">
+                create_by = #{createBy,jdbcType=BIGINT},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="dyc.mybatis.simple.model.SysRole">
+    update sys_role
+    set role_name = #{roleName,jdbcType=VARCHAR},
+      enabled = #{enabled,jdbcType=INTEGER},
+      create_by = #{createBy,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
