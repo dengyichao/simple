@@ -2,6 +2,7 @@ package dyc.mybatis.simple.mapper;
 
 import dyc.mybatis.simple.model.SysRole;
 import org.apache.ibatis.annotations.CacheNamespaceRef;
+import org.apache.ibatis.session.RowBounds;
 
 import java.util.List;
 
@@ -9,6 +10,9 @@ import java.util.List;
 //如这里引用了xml的缓存配置
 @CacheNamespaceRef(SysRoleMapper.class)
 public interface SysRoleMapper {
+
+    List<SysRole> findAll(RowBounds rowBounds);
+
     int deleteByPrimaryKey(Long id);
 
     int insert(SysRole record);
@@ -24,4 +28,5 @@ public interface SysRoleMapper {
     List<SysRole> findAllRoleAndPrivileges();
 
     List<SysRole> findRoleByUserId(long userId);
+
 }
